@@ -95,7 +95,7 @@ Resources:
       InstanceType: t3.medium
       SecurityGroups: 
         - !Ref WebServerSecGroup
-      KeyName: Udemy
+      # KeyName: Udemy
       # IamInstanceProfile:
       #   Fn::ImportValue:
       #     Fn::Sub: OutputProfileInstance
@@ -137,4 +137,4 @@ Outputs:
     Description: Application Load Balancer DNS Name
     Export: 
       Name: !Sub ${EnvironmentName}-ApplicationLoadBalancerDnsName
-    Value: !GetAtt WebAppLB.DNSName
+    Value: !Join [ "",[ 'http://', !GetAtt WebAppLB.DNSName ]]
