@@ -111,7 +111,7 @@ Resources:
           apt-get install apache2 -y
           systemctl start apache2.service
           cd /var/www/html
-          aws s3 cp s3://udacity-704223756111/index.html
+          echo "it works! Udagram, Udacity" > index.html
 
   WebAppGroup:
     Type: AWS::AutoScaling::AutoScalingGroup

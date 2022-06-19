@@ -11,4 +11,4 @@ Students may use a JSON file for increasing the generic nature of the YAML code.
 In YAML code, the `${EnvironmentName}` would be substituted with `UdacityProject` accordingly.# IaaC
 
 #### Link to url
-http://udagr-webap-11vs4m8xu7uci-534516355.us-east-1.elb.amazonaws.com/
+http://udagr-webap-81jrv2q8iujg-311050716.us-east-1.elb.amazonaws.com/
